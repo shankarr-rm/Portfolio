@@ -38,6 +38,13 @@
     color: white;
 }
 
+.ab:hover{
+    transform: scale(1.06);
+    transition: 0.2s;
+    color: var(--color-primary);
+}
+
+
 .b{
     padding-top: 0.17rem;
 }
@@ -50,83 +57,3 @@
     margin-top: 4.5px;
     color: var(--color-primary);
 }
-
-
-
-
-/* nav{
-    background: rgba(0,0,0,0.3);
-    width: max-content;
-    width: 1000px;
-    display: block;
-    padding: 0.7rem 1.7rem;
-    z-index: 2;
-    position: fixed; 
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 42.1rem;
-    display: flex;
-    gap: 0.8rem;
-    backdrop-filter: blur(15px);
-}
-
-nav a{
-    background: transparent;
-    padding: 0.9rem;
-    border-radius: 50%;
-    display: flex;
-    color: var(--color-light);
-    font-size: 1.1rem;
-}
-
-nav a:hover{
-    background: rgba(0, 0, 0, 0.3);
-}
-
-nav a.active {
-    background: var(--color-bg);
-    color: var(--color-white);
-} */
-
-
-
-
-
-
-
-
-
-
-/* nav{
-    background: rgba(0,0,0,0.3);
-    width: max-content;
-    display: block;
-    padding: 0.7rem 1.7rem;
-    z-index: 2;
-    position: fixed; 
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 2rem;
-    display: flex;
-    gap: 0.8rem;
-    border-radius: 3rem;
-    backdrop-filter: blur(15px);
-}
-
-nav a{
-    background: transparent;
-    padding: 0.9rem;
-    border-radius: 50%;
-    display: flex;
-    color: var(--color-light);
-    font-size: 1.1rem;
-}
-
-nav a:hover{
-    background: rgba(0, 0, 0, 0.3);
-}
-
-nav a.active {
-    background: var(--color-bg);
-    color: var(--color-white);
-} */
