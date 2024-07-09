@@ -8,17 +8,21 @@ const Header = () => {
   return (
     <header>
       <div className="container header__container">
-        <h5>Hello I'm</h5>
-        <h1>Shankar</h1>
-        <h5 className="test-light"> Fullstack Developer</h5>
+        <div className="introduction">
+        <h2>Hello I'm</h2>
+        <h1>Shankar Mahendran</h1>
+        <h5 className="test_light"> Fullstack Developer</h5>
+        <h4 className="caption_about">I'm a full stack developer with a passion for creating dynamic and responsive websites. 
+        I bring ideas to life with clean, efficient code and innovative design.</h4>
         <CTA/>
         <HeaderSocials/>
-
+        </div>
+  
         <div className="me">
           <img src={ME} alt="" />
         </div>
 
-        <a href="#contact" className='scroll__down'>Scroll Down</a>
+        {/* <a href="#contact" className='scroll__down'>Scroll Down</a> */}
 
       </div>
       
