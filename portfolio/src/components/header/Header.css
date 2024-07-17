@@ -7,10 +7,6 @@ header{
 .header__container{
     display: flex;
     gap: 10rem;
-        
-    /* text-align: center;
-    height: 100%;*/
-    /* position: relative;  */
 }
 
 .introduction{
@@ -42,8 +38,10 @@ header{
     padding-right: -10px;
     height: 40rem;
     background: linear-gradient(var(--color-primary), transparent);
+    background: linear-gradient(rgba(255, 255, 0, 0.185), transparent);
     border-radius: 30rem 30rem 0 0;
     padding: 1rem ;
+    filter: brightness(1.1);
 }
 
 .scroll__down{
@@ -94,11 +92,58 @@ header{
     }
 }
 
-@media screen and (max-width:600px) {
-    .header{
-        height: 100vh;
+
+@media screen and (max-width: 600px) {
+    header {
+        height: auto;
+        padding-top: 3rem;
     }
-    .header__socials , .scroll__down{
+
+    .header__container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .introduction {
+        margin-top: 2rem;
+        text-align: center;
+        order: 2; 
+    }
+
+    .introduction h1 {
+        margin-top: 1.6rem;
+        margin-bottom: 1rem;
+        font-size: 3rem;
+        line-height: 3.4rem;
+    }
+
+    .introduction h2 {
+        font-size: 1.5rem;
+    }
+
+    .caption_about {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .me {
+        width: 100%;
+        margin: 0;
+        height: 25rem;
+        padding: 0;
+        /* background: none; */
+        order: 1; 
+    }
+    .cta{
+        margin: 2rem 3rem;
+        font-size: 14px;
+        margin-bottom: 1px;
+    }
+
+     .header__socials,
+    .scroll__down {
         display: none;
     }
 }

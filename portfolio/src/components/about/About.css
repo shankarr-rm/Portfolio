@@ -9,6 +9,7 @@
     aspect-ratio: 1/1;
     border-radius: 2rem;
     background: linear-gradient(45deg,transparent,var(--color-primary),transparent);
+    background: linear-gradient(45deg,transparent,rgba(255, 255, 0, 0.451),transparent);
     display: grid;
     place-items: center;
 }
@@ -24,14 +25,10 @@
     transform: rotate(0); 
 }
 
-.about__cards{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 1rem;
-}
 
 .about__card{
     background: var(--color-bg-variant);
+    background: rgba(255, 255, 0, 0.155);
     border: 1px solid transparent;
     border-radius: 1rem;
     padding: 2rem;
@@ -43,6 +40,8 @@
     background: transparent;
     border-color: var(--color-primary-variant);
     cursor: default;
+    transform: scale(1.1);
+    transition: 0.4s;
 }
 
 .about__icon{
@@ -56,13 +55,14 @@
 }
 
 .about__card small{
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     color: var(--color-light);
 }
 
 .about__content p{
     margin: 2rem 0 2.6rem; 
     color: var(--color-light);
+    text-align: justify;
 }
 
 @media screen and (max-width:1024px) {
@@ -90,6 +90,8 @@
     }
     .about__content{
         text-align: center;
+        margin-left: 0.8rem;
+        margin-right: 1.2rem;
     }
     .about__content p{
         margin: 1.5rem 0;

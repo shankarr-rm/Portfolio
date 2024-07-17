@@ -23,29 +23,19 @@ const About = () => {
 
             <article className='about__card'>
               <FaAward className='about__icon'/>
-              <h5>Experience</h5>
-              <small>3+ Years Working</small>
+              <h5>Qualification</h5>
+              <small>BSc(Hons) in Computing and Information Systems</small>
               {/* Small indicates that this is a secondary information, 
               supporting the primary heading. */}
             </article>
 
-            <article className='about__card'>
-              <FiUsers className='about__icon'/>
-              <h5>Projects</h5>
-              <small>80+ Completed</small>
-            </article>
-
-            <article className='about__card'>
-              <VscFolderLibrary className='about__icon'/>
-              <h5>Experience</h5>
-              <small>3+ Years Working</small>
-            </article>
             </div>
             
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius atque ipsam repellendus perspiciatis aut? 
-              Excepturi blanditiis nesciunt voluptates. Ratione commodi delectus dicta pariatur voluptate? Soluta, 
-              tempore iusto. Iste, asperiores deleniti.
+            <p> 
+            Motivated and ambitious Computing Undergraduate having a  strong communication, leadership and problem-solving with a
+            strong desire to continuously acquire knowledge with new  technologies. I am seeking an internship opportunity to further
+            enhance my academic knowledge, practical skills and to collaborate with industry experts to develop innovative
+            projects and to continue my growth in this field
             </p>
 
             <a href="#contact" className='btn btn-primary'>Lets Talk</a>

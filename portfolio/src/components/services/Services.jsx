@@ -1,6 +1,6 @@
 import React from 'react'
 import './Services.css'
-import { BiCheck } from "react-icons/bi";
+import { FaArrowRight } from "react-icons/fa6";
 
 const Services = () => {
   return (
@@ -16,36 +16,15 @@ const Services = () => {
             <h3>UI/UX Design</h3>
           </div>
 
-          <ul className="service__list">
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-          </ul>
+          <div className="service__list">
+              <p>
+                Crafting exceptional user experiences through intuitive and aesthetically 
+                pleasing interfaces. I focus on understanding user needs, wireframing, prototyping, 
+                and creating visually engaging designs that ensure seamless interactions and user 
+                satisfaction.
+              </p>
+              <div className="readmore-arrow"><div className="readmore">Read More</div><div className="arrow"><FaArrowRight /></div></div>
+          </div>
         </article>
 
 
@@ -54,79 +33,17 @@ const Services = () => {
             <h3>Web Development</h3>
           </div>
 
-          <ul className="service__list">
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-          </ul>
-        </article>
-
-
-        <article className="service">
-          <div className="service__head">
-            <h3>Content Creation</h3>
+          <div className="service__list">
+              <p>
+                Building robust, scalable, and responsive websites using the latest technologies. 
+                I specialize in both front-end and back-end development, delivering functional and 
+                high-performance web solutions tailored to meet your business objectives.
+              </p>
+              <div className="readmore-arrow"><div className="readmore">Read More</div><div className="arrow"><FaArrowRight /></div></div>
           </div>
-
-          <ul className="service__list">
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-          </ul>
         </article>
+
+
 
       </div>
     </section>

@@ -1,17 +1,16 @@
 .navbar{
-    background: rgb(7, 7, 35);
+    background: rgba(255, 255, 0, 0.090);
     width: 96rem;
-    /* padding: 1rem 1.7rem; */
-    /* position: fixed;  */
     display: flex;
     backdrop-filter: blur(15px);
 }
 
 .hiall{
-    margin-top: 0.7rem;
+    margin-top: 0.9rem;
     font-size: 1.5rem;
-    margin-left: 8rem;
-    color: var(--color-primary);
+    font-weight: bolder;
+    margin-left: 10rem;
+    color: white;
 }
 
 .column{
@@ -36,6 +35,7 @@
     display: flex;
     gap: 1rem;
     color: white;
+    margin-top: 5px;
 }
 
 .ab:hover{
@@ -55,5 +55,43 @@
 
 .y{
     margin-top: 4.5px;
-    color: var(--color-primary);
+    color: white;
+}
+
+@media screen and (max-width:1024px) {
+    .portfolio__container{
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
+    }
+  
+}
+
+@media screen and (max-width:600px) {
+    .column{
+        margin-left: 1rem;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .a{
+        display: none;
+    }
+    .b{
+        font-size: 1.4rem;
+        margin-top: -1px;
+    }
+
+    .xy{
+        display: flex;
+        flex-direction: row;
+        gap: 3px;
+        margin-left: -7rem;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        margin-top: 5px;   
+    }
+    .y{
+        display: none;
+    }
+    
 }

@@ -15,6 +15,9 @@
 .portfolio__item:hover{
     border-color: var(--color-primary-variant);
     background: transparent;
+    transform: scale(1.05) rotate(5deg) ;
+    transition: 0.4s;
+    transition: transform 1s, background-color 1s, box-shadow 1s;
 }
 
 .portfolio__item-image{
@@ -24,6 +27,7 @@
 
 .portfolio__item h3{
     margin: 1.2rem 0.2rem;
+    font-size: 1.08rem;
 }
 
 .portfolio__item-cta{
@@ -43,7 +47,11 @@
 @media screen and (max-width:600px) {
     .portfolio__container{
         grid-template-columns: 1fr;
-        gap: 1rem;
+        gap: 2.5rem;
+    }
+    .portfolio__item{
+        margin-left: 0.9rem;
+        margin-right: 1rem;
     }
     
 }

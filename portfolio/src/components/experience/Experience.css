@@ -16,7 +16,7 @@
     background: transparent;
     border-color: var(--color-primary-variant);
     cursor: default;
-    border: 2px solid var(--color-primary-variant);
+    border: 2px solid rgba(255, 255, 0, 0.379);
     transform: scale(1.05);
     transition: 0.4s;
 }
