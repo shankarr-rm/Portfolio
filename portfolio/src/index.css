@@ -12,13 +12,10 @@
 
 :root {
   --color-bg: #1f1f38;
-  --color-bg-variant: #2c2c6c;
-
-  --color-bg-variant:rgba(255, 255, 0, 0.155);
-  --color-primary: #4db5ff;
+  --color-bg-variant:rgba(255, 255, 0, 0.067);
   --color-primary: rgba(255, 255, 0, 0.838);
   --color-primary: rgba(255, 255, 0, 0.379);
-  --color-primary-variant: rgba(77,181,255,0.4);
+  --color-primary-variant: rgba(255, 255, 0, 0.838);
   --color-white: #fff;
   --color-light: rgba(255,255,255,0.6);
   --transition: all 400ms ease; 
@@ -48,7 +45,7 @@ body{
   font-family: "Poppins", sans-serif;
   background: var(--color-bg);
   color: var(--color-white);
-  background: black;
+  background: rgb(11, 20, 1);
   line-height: 1.7;
 }
 

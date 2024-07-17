@@ -63,18 +63,30 @@
     gap: 1rem;
     margin-left: 8.5rem;
     color: var(--color-primary);
+    cursor: pointer;
 }
 .arrow{
     margin-top: 4px;
 }
 
 @media screen and (max-width:1024px) {
-    .services__container{
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-    }
-    .service{
+    .services__container {
+        flex-direction: row;
+        align-items: center;
         height: auto;
+        gap: 3rem;
+        padding-top: 3rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .service {
+        width: 80%;
+        max-width: 25rem;
+    }
+    .readmore-arrow {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1rem;
     }
 }
 
@@ -89,7 +101,10 @@
     }
     .service{
         margin-left: -10rem;
-        width: 17rem;
+        margin-left: auto;
+        margin-right: auto;
+        /* width: 17rem; */
+        width: 95%;
     }
     .readmore-arrow{
         margin-left: 5rem;

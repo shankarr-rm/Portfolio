@@ -13,7 +13,7 @@
 }
 
 .portfolio__item:hover{
-    border-color: var(--color-primary-variant);
+    border: 1.5px solid rgba(255, 255, 0, 0.46);
     background: transparent;
     transform: scale(1.05) rotate(5deg) ;
     transition: 0.4s;
