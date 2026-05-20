@@ -111,7 +111,7 @@
     }
     
 
-@media screen and (max-width:600px) {
+/* @media screen and (max-width:600px) {
     .experience__container{
         display: flex;
         flex-direction: column;
@@ -150,4 +150,141 @@
     padding-top: 1px;
     }
     
+} */
+
+@media screen and (max-width:600px) {
+
+    .experience__container{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        padding: auto;
+    }
+
+    .experience__container > div{
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        padding-top: 2rem;
+
+        /* Floating Glass Effect */
+        backdrop-filter: blur(10px);
+
+        /* Initial state */
+        opacity: 0;
+        transform: translateY(100px) scale(0.9);
+
+        /* Scroll animation */
+        animation: cardReveal 1s ease-out forwards;
+        animation-timeline: view();
+        animation-range: entry 10% cover 35%;
+
+        transition: transform 0.4s ease;
+    }
+
+    /* Hover floating effect */
+    .experience__container > div:hover{
+        transform: translateY(-10px) scale(1.03);
+    }
+
+    .icons_react{
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        font-size: 4rem;
+
+        /* Icons animation when section appears */
+        opacity: 0;
+        transform: translateY(60px);
+
+        animation: iconReveal 1s ease forwards;
+        animation-timeline: view();
+        animation-range: entry 0% cover 30%;
+    }
+
+    .icon1{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 1rem;
+    }
+
+    .icon2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 0rem;
+        margin-left: 1.8rem;
+    }
+
+    .experience__content{
+        display: flex;
+        flex-direction: column;
+        padding-left: 1px;
+        padding-top: 1px;
+    }
+
+    /* Floating icons */
+    .icon1 svg,
+    .icon2 svg{
+        animation: floating 3s ease-in-out infinite;
+    }
+
+    /* Delay each icon for premium look */
+    .icon1 svg:nth-child(2),
+    .icon2 svg:nth-child(2){
+        animation-delay: 0.5s;
+    }
+
+    .icon1 svg:nth-child(3){
+        animation-delay: 1s;
+    }
+
+    .icon1 svg:nth-child(4){
+        animation-delay: 1.5s;
+    }
+
+    .icon1 svg:nth-child(5){
+        animation-delay: 2s;
+    }
+
+    .icon1 svg:nth-child(6){
+        animation-delay: 2.5s;
+    }
+}
+
+
+/* Card reveal animation */
+@keyframes cardReveal {
+    from{
+        opacity: 0;
+        transform: translateY(100px) scale(1.2);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Icons reveal */
+@keyframes iconReveal {
+    from{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Floating animation */
+@keyframes floating {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
 }

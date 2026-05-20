@@ -26,6 +26,26 @@
     transform: rotate(0); 
 }
 
+/* .about__me-image {
+    border-radius: 2rem;
+    overflow: hidden;
+    animation: rotateLoop 3s ease-in-out infinite;
+}
+
+@keyframes rotateLoop {
+    0% {
+        transform: rotate(10deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(10deg);
+    }
+} */
+
 
 .about__card{
     background: var(--color-bg-variant);
@@ -84,9 +104,9 @@
         margin-left: auto;
         margin-right: auto;
     }
-   
-  
-}
+
+}  
+
 
 @media screen and (max-width:600px) {
     .about__me{
@@ -106,4 +126,5 @@
         margin-right: auto;
         margin-left: auto;
     }
+
 }

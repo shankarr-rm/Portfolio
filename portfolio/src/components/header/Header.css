@@ -99,7 +99,7 @@ header{
     }
 
     .introduction {
-        margin-top: 2rem;
+        margin-top: 0rem;
         text-align: center;
         order: 2; 
     }
@@ -109,6 +109,8 @@ header{
         margin-bottom: 1rem;
         font-size: 3rem;
         line-height: 3.4rem;
+        text-shadow: 0 0 10px rgba(255, 0, 150, 0.3);
+        transition: 0.3s;
     }
 
     .introduction h2 {
@@ -124,21 +126,124 @@ header{
     .me {
         width: 100%;
         margin: 0;
-        height: 23.4rem;
+        /* height: 23.4rem; */
+        height: 28rem;
         padding: 0;
         order: 1; 
     }
+
     .cta{
         margin: 2rem 3rem;
         font-size: 14px;
         margin-bottom: 1px;
     }
 
-     .header__socials,
+    .header__socials, 
     .scroll__down {
         display: none;
-    }
+    } 
+
+.introduction h1,
+.introduction h2,
+.test_light,
+.caption_about {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUpMobile 1.2s ease forwards;
+}
+
+.introduction h2 { animation-delay: 1.5s; }
+.test_light { animation-delay: 1s; }
+.introduction h1 { animation-delay: 2.5s; }
+.caption_about { animation-delay: 0.7s; }
+
+@keyframes fadeUpMobile {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.me {
+  animation: slideInMobile 1s ease-out, floatMobile 2.5s ease-in-out infinite 1s;
+}
+
+@keyframes slideInMobile {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes floatMobile {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+  100% { transform: translateY(0); }
+}
+
+/* ......................just chrck................... */
+
+.cta .btn{ 
+    border: 2px solid transparent; 
+    animation: none; 
+}
+
+/* FIRST BUTTON - DOWNLOAD CV (YELLOW FLASH BORDER) */ 
+
+.cta .btn:first-child{ 
+    border: 3.5px solid rgba(255, 255, 0, 0.379); 
+    animation: yellowBorderFlash 1.6s infinite; 
 } 
+        
+/* SECOND BUTTON - LET'S TALK (BLACK FLASH BORDER) */ 
+
+.cta .btn:last-child{ 
+    border: 3.5px solid rgba(0, 0, 0, 1); 
+    animation: blackBorderFlash 1.6s infinite; 
+} 
+
+/* YELLOW BORDER ON/OFF */ 
+@keyframes yellowBorderFlash{ 
+    0% { border-color: rgba(255, 255, 0, 0.379); 
+         box-shadow: 0 0 14px rgba(255, 255, 0, 0.379); 
+    } 
+
+    50% { border-color: transparent; 
+        box-shadow: none; 
+    } 
+
+    100% { border-color: rgba(255, 255, 0, 0.379); 
+        box-shadow: 0 0 14px rgba(255, 255, 0, 0.379); 
+    } 
+
+} 
+    
+/* BLACK BORDER ON/OFF */ 
+@keyframes blackBorderFlash{ 
+    /* 0% { border-color: rgba(0, 0, 0, 1); } 
+    50% { border-color: transparent; } 
+    100% { border-color: rgba(0, 0, 0, 1); } */
+    0% { border-color:rgb(49, 67, 18); 
+         box-shadow: white; 
+    } 
+
+    50% { border-color: transparent; 
+        box-shadow: none; 
+    } 
+
+    100% { border-color:rgb(49, 67, 18); 
+         box-shadow: white; 
+    }  
+}
+}
+
+
+/* .....................just check..................... */
+    
 
 
 @media screen and (min-width: 600px) and (max-width: 1024px) {
@@ -189,5 +294,5 @@ header{
     .header__socials {
         display: none;
     }
-}
 
+}

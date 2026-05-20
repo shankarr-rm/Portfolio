@@ -198,4 +198,295 @@ button{
     }
     
 }
-    
+
+@media screen and (max-width:600px){
+
+    .container.contact__container{
+        width: var(--container-width-sm);
+    }
+
+    /* Contact options layout */
+    .contact__options{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        margin-bottom: 4rem;
+    }
+
+    /* Base card style */
+    .contact__option{
+        width: 100%;
+
+        /* Smooth feel */
+        transition: transform 0.4s ease,
+                    box-shadow 0.4s ease;
+
+        will-change: transform;
+        backface-visibility: hidden;
+    }
+
+    /* FIRST CARD - LEFT */
+    .contact__option:nth-child(1){
+        animation:
+            cardLeft 1s ease-out both,
+            floatCard 3.2s ease-in-out infinite;
+
+        animation-timeline: view(), auto;
+        animation-range: entry 10% cover 40%;
+
+        animation-delay: 0s, 1s;
+    }
+
+    /* SECOND CARD - RIGHT */
+    .contact__option:nth-child(2){
+        animation:
+            cardRight 1s ease-out both,
+            floatCard 3.4s ease-in-out infinite;
+
+        animation-timeline: view(), auto;
+        animation-range: entry 10% cover 40%;
+
+        animation-delay: 0.15s, 1.2s;
+    }
+
+    /* THIRD CARD - LEFT */
+    .contact__option:nth-child(3){
+        animation:
+            cardLeft 1s ease-out both,
+            floatCard 3s ease-in-out infinite;
+
+        animation-timeline: view(), auto;
+        animation-range: entry 10% cover 40%;
+
+        animation-delay: 0.3s, 1.4s;
+    }
+
+    /* Premium hover effect */
+    .contact__option:hover{
+        transform: translateY(-12px) scale(1.04);
+        box-shadow: 0 10px 28px rgba(255,255,0,0.18);
+    }
+
+    /* Form section normal */
+    .form_flex{
+        display: flex;
+        flex-direction: column;
+    }
+
+    form{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .msg_layout{
+        margin-left: 1.2rem;
+        margin-right: 1.2rem;
+        margin-bottom: 5px;
+        display: none;
+    }
+
+    button{
+        margin-left: 6rem;
+    }
+}
+
+
+/* =========================
+   LEFT ENTRY
+========================= */
+@keyframes cardLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-180px) scale(0.85);
+    }
+
+    70%{
+        opacity: 1;
+        transform: translateX(12px) scale(1.03);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+
+/* =========================
+   RIGHT ENTRY
+========================= */
+@keyframes cardRight{
+    0%{
+        opacity: 0;
+        transform: translateX(180px) scale(0.85);
+    }
+
+    70%{
+        opacity: 1;
+        transform: translateX(-12px) scale(1.03);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+
+/* =========================
+   BIG FLOATING EFFECT
+========================= */
+@keyframes floatCard{
+    0%{
+        transform: translateY(0px);
+    }
+
+    25%{
+        transform: translateY(-3px);
+    }
+
+    50%{
+        transform: translateY(2px);
+    }
+
+    75%{
+        transform: translateY(-6px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
+
+/* ............................... */
+
+
+/* Base card style */
+.contact__option{
+    width: 100%;
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease,
+        border-color 0.4s ease;
+
+    will-change: transform;
+    backface-visibility: hidden;
+
+    border: 2px solid transparent;
+}
+
+
+/* FIRST CARD - LEFT */
+.contact__option:nth-child(1){
+    animation:
+        cardLeft 1s ease-out both,
+        floatCard 4s ease-in-out infinite,
+        borderGlow 2s ease-in-out infinite;
+
+    animation-timeline: view(), auto, auto;
+    animation-range: entry 10% cover 40%;
+
+    animation-delay: 0s, 1s, 1s;
+}
+
+
+/* SECOND CARD - RIGHT */
+.contact__option:nth-child(2){
+    animation:
+        cardRight 1s ease-out both,
+        floatCard 4s ease-in-out infinite,
+        borderGlow 2s ease-in-out infinite;
+
+    animation-timeline: view(), auto, auto;
+    animation-range: entry 10% cover 40%;
+
+    animation-delay: 0.15s, 1s, 1s;
+}
+
+
+/* THIRD CARD - LEFT */
+.contact__option:nth-child(3){
+    animation:
+        cardLeft 1s ease-out both,
+        floatCard 4s ease-in-out infinite,
+        borderGlow 2s ease-in-out infinite;
+
+    animation-timeline: view(), auto, auto;
+    animation-range: entry 10% cover 40%;
+
+    animation-delay: 0.3s, 1s, 1s;
+}
+
+
+/* Hover */
+.contact__option:hover{
+    transform: scale(1.04);
+    box-shadow: 0 10px 28px rgba(0,255,0,0.18);
+}
+
+
+
+/* =========================
+   FLOATING (SYNCED)
+========================= */
+@keyframes floatCard{
+
+    0%{
+        transform: translate(0px, 0px);
+    }
+
+    25%{
+        transform: translate(-10px, -10px);
+    }
+
+    50%{
+        transform: translate(10px, 10px);
+    }
+
+    75%{
+        transform: translate(-8px, -8px);
+    }
+
+    100%{
+        transform: translate(0px, 0px);
+    }
+}
+
+
+/* =========================
+   BORDER PULSE
+   GREEN → NONE → GREEN
+========================= */
+@keyframes borderGlow{
+
+    0%{
+        border-color: rgba(0,255,0,0);
+        box-shadow: none;
+    }
+
+    25%{
+        border-color:  rgba(255, 255, 0, 0.379);
+        box-shadow: 0 0 14px rgba(0,255,0,0.35);
+    }
+
+    50%{
+        border-color: rgba(0,255,0,0);
+        box-shadow: none;
+    }
+
+    75%{
+        border-color:  rgba(255, 255, 0, 0.379);
+        box-shadow: 0 0 14px rgba(0,255,0,0.35);
+    }
+
+    100%{
+        border-color: rgba(0,255,0,0);
+        box-shadow: none;
+    }
+}
