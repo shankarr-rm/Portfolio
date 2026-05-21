@@ -4,6 +4,8 @@ import React from "react";
 import "./publications.css";
 import { FaExternalLinkAlt, FaAward } from "react-icons/fa";
 import { MdOutlineWorkspacePremium } from "react-icons/md";
+import icarc from "/icarc.jpg";
+import comurs from "/comurs.jpg";  
 
 const publications = [
   {
@@ -14,7 +16,7 @@ const publications = [
       "International Conference on Advanced Research in Computing 2026 (ICARC 2026)",
     // description:
       // "Developed an NLP-based automated grading system using transformer-based semantic similarity techniques to evaluate descriptive answers with improved accuracy and fairness.",
-    image: "/src/assets/icarc.jpg",
+    image: "/icarc.jpg",
     award: "International Research Publication",
     link: "https://ieeexplore.ieee.org/document/11453521",
     button: "View IEEE Publication",
@@ -28,7 +30,7 @@ const publications = [
       "Computing Undergraduate Research Symposium 2026 (comURS 2026)",
     description:
       "Developed an NLP-based automated grading system using transformer-based semantic similarity techniques to evaluate descriptive answers with Explainable AI support.",
-    image: "/src/assets/comurs.jpg",
+    image: "/comurs.jpg",
     award: "Best Paper Award - Data Science",
     link: "https://drive.google.com/file/d/1aJWHhRnh4L5YbVVMrjy3Efwd0o4snDm9/view?usp=drive_link",
     button: "View Abstract",
