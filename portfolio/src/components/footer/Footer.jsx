@@ -12,13 +12,13 @@ const Footer = () => {
       <a href="#" className='footer__logo'>SHANKAR MAHENDRAN</a>
 
       <ul className='permalinks'>
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><b><a href="#">Home</a></b></li>
+        <li><b><a href="#about">About</a></b></li>
+        <li><b><a href="#experience">Experience</a></b></li>
+        <li><b><a href="#services">Services</a></b></li>
+        <li><b><a href="#portfolio">Portfolio</a></b></li>
+        {/* <li><a href="#testimonials">Testimonials</a></li> */}
+        <li><b><a href="#contact">Contact</a></b></li>
       </ul>
 
       <div className="footer__socials">
@@ -33,7 +33,7 @@ const Footer = () => {
       </div>
 
       <div className="footer__copyright">
-          <small>&copy; SHANKAR 2024. All rights reserved</small>
+          <small><b>&copy; SHANKAR 2026. All rights reserved</b></small>
       </div>
 
     </div>

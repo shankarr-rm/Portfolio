@@ -406,7 +406,7 @@ button{
     animation-timeline: view(), auto, auto;
     animation-range: entry 10% cover 40%;
 
-    animation-delay: 0.15s, 1s, 1s;
+    animation-delay: 0s, 1s, 1s;
 }
 
 
@@ -420,7 +420,8 @@ button{
     animation-timeline: view(), auto, auto;
     animation-range: entry 10% cover 40%;
 
-    animation-delay: 0.3s, 1s, 1s;
+    animation-delay: 0s, 1s, 1s;
+
 }
 
 

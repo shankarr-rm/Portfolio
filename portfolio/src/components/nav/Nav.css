@@ -150,6 +150,35 @@
         opacity:1;
     }
 }
+.x{
+    /* margin-left: -0.9rem;
+    margin-right: -0.8rem; */
 
+    /* shiny text effect */
+    background: linear-gradient(
+        90deg,
+        rgba(255,255,255,0.5) 0%,
+        #ffffff 25%,
+        var(--color-primary) 50%,
+        #ffffff 75%,
+        rgba(255,255,255,0.5) 100%
+    );
 
+    background-size: 250% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: helloShine 3s linear infinite;
+}
+
+/* running shine animation */
+@keyframes helloShine{
+    0%{
+        background-position: -130% center;
+    }
+
+    100%{
+        background-position: 130% center;
+    }
+}
 }

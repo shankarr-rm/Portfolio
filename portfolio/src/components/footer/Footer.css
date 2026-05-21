@@ -126,4 +126,58 @@
 /* '''''''''''''''''''''''''''''''''''''''''''''''''' */
 
 
+}@media screen and (max-width:600px) {
+
+    .footer{
+        height: 35em;
+    }
+
+    .permalinks {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .footer__socials{
+        margin-bottom: 2.6rem;
+    } 
+
+    /* Social icons glitter effect */
+    .footer__socials a{
+        background: var(--color-bg);
+        color: var(--color-white);
+        border: 2px solid transparent;
+        border-radius: 1rem;
+        transition: 0.3s ease;
+        animation: whiteGlitter 2s ease-in-out infinite;
+    }
+
+    /* Small hover zoom only */
+    .footer__socials a:hover{
+        transform: scale(1.08);
+    }
+
+    /* White glitter ON -> OFF -> ON */
+    @keyframes whiteGlitter{
+
+        /* Normal */
+        0%{
+            border-color: transparent;
+            box-shadow: none;
+        }
+
+        /* Glitter ON */
+        50%{
+            border-color: rgba(255,255,255,0.95);
+            box-shadow:
+                0 0 6px rgba(255,255,255,0.8),
+                0 0 12px rgba(255,255,255,0.6),
+                0 0 20px rgba(255,255,255,0.4);
+        }
+
+        /* Glitter OFF */
+        100%{
+            border-color: transparent;
+            box-shadow: none;
+        }
+    }
 }
