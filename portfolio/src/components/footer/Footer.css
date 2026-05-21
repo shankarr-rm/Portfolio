@@ -66,4 +66,64 @@
     .footer__socials{
         margin-bottom: 2.6rem;
     } 
+
+
+
+
+/* ;;;;;;;;;;;;;;;;;;; juust to check ;;;;;;; */
+
+.footer__socials a{
+    position: relative;
+    background: var(--color-bg); /* always visible */
+    border: 2px solid transparent; /* thick border */
+    border-radius: 1rem;
+    transition: 0.4s ease;
+    animation: glitterBorder 2s ease-in-out infinite;
+}
+
+/* Small hover zoom */
+.footer__socials a:hover{
+    transform: scale(1.1);
+}
+
+/* Glitter border animation */
+@keyframes glitterBorder{
+
+    /* Normal state */
+    0%{
+        border-color: transparent;
+        box-shadow: none;
+        transform: scale(1);
+    }
+
+    /* Glitter ON */
+    /* 50%{
+        border-color: rgba(255,255,255,0.95);
+        box-shadow:
+            0 0 8px rgba(255,255,255,0.9),
+            0 0 18px rgba(255,255,255,0.7),
+            0 0 28px rgba(255,255,255,0.5);
+        transform: scale(1.08);
+    } */
+
+     50%{
+        border-color: rgba(255,255,255,0.95);
+        box-shadow:
+            0 0 0px black,
+            0 0 6px rgba(255,255,255,0.7),
+            0 0 8px black;
+        transform: scale(1.08);
+    }
+
+    /* Glitter OFF */
+    100%{
+        border-color: transparent;
+        box-shadow: none;
+        transform: scale(1);
+    }
+}
+
+/* '''''''''''''''''''''''''''''''''''''''''''''''''' */
+
+
 }

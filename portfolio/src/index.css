@@ -135,6 +135,13 @@ img{
 }
 
 @media screen and (max-width:600px){
+
+  html,
+  body{
+    overflow-x: hidden;
+    width: 100%;
+  }
+
   .container{
     width: var(--container-width-sm);
   }

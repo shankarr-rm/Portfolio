@@ -249,7 +249,6 @@
     .icon1 svg:nth-child(6){
         animation-delay: 2.5s;
     }
-}
 
 
 /* Card reveal animation */
@@ -287,4 +286,97 @@
     100%{
         transform: translateY(0px);
     }
+
+}
+
+
+    .experience__container{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        padding: auto;
+    }
+
+    /* ⭐ CARD BASE (UPDATED FOR GLITTER BORDER) */
+    .experience__container > div{
+        position: relative;
+        overflow: hidden;
+
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        padding-top: 2rem;
+
+        background: var(--color-bg-variant);
+        border-radius: 2rem;
+
+        /* remove normal border so glow takes over */
+        border: 2px solid transparent;
+
+        /* animation setup */
+        z-index: 1;
+    }
+
+    /* ✨ GLITTER / RUNNING BORDER */
+    .experience__container > div::before{
+        content: "";
+        position: absolute;
+        inset: 0;
+        padding: 4px;
+        border-radius: inherit ;
+
+        background: linear-gradient(
+            90deg,
+            transparent,
+            rgba(255, 255, 0, 0.155),
+            rgba(255, 255, 0, 0.7),
+            rgba(255, 255, 0, 0.155),
+            transparent
+        );
+
+        background-size: 300% 100%;
+        animation: borderRun 2.5s linear infinite;
+
+        /* show only border area */
+        -webkit-mask: 
+            linear-gradient(#000 0 0) content-box, 
+            linear-gradient(#000 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+
+        pointer-events: none;
+    }
+
+    /* optional soft glow */
+    .experience__container > div::after{
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        box-shadow: 0 0 18px rgba(255, 255, 0, 0.15);
+        opacity: 0;
+        transition: 0.4s;
+        pointer-events: none;
+    }
+
+    .experience__container > div:hover::after{
+        opacity: 1;
+    }
+
+    /* keep your hover effect but smoother */
+    .experience__container > div:hover{
+        transform: translateY(-10px) scale(1.03);
+        transition: 0.4s;
+    }
+
+    /* ⭐ ANIMATION */
+    @keyframes borderRun {
+        0%{
+            background-position: 0% 50%;
+        }
+        100%{
+            background-position: 300% 50%;
+        }
+    }
+
 }

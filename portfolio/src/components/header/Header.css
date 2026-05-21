@@ -195,21 +195,21 @@ header{
 /* FIRST BUTTON - DOWNLOAD CV (YELLOW FLASH BORDER) */ 
 
 .cta .btn:first-child{ 
-    border: 3.5px solid rgba(255, 255, 0, 0.379); 
-    animation: yellowBorderFlash 1.6s infinite; 
+    border:3.5px solid rgba(255, 255, 0, 0.379); 
+    animation: yellowBorderFlash 1.1s infinite; 
 } 
         
 /* SECOND BUTTON - LET'S TALK (BLACK FLASH BORDER) */ 
 
 .cta .btn:last-child{ 
     border: 3.5px solid rgba(0, 0, 0, 1); 
-    animation: blackBorderFlash 1.6s infinite; 
+    animation: blackBorderFlash 1s infinite; 
 } 
 
 /* YELLOW BORDER ON/OFF */ 
 @keyframes yellowBorderFlash{ 
     0% { border-color: rgba(255, 255, 0, 0.379); 
-         box-shadow: 0 0 14px rgba(255, 255, 0, 0.379); 
+         box-shadow: 0 0 14px rgba(0, 255, 0, 0.35); 
     } 
 
     50% { border-color: transparent; 
@@ -217,7 +217,7 @@ header{
     } 
 
     100% { border-color: rgba(255, 255, 0, 0.379); 
-        box-shadow: 0 0 14px rgba(255, 255, 0, 0.379); 
+        box-shadow: 0 0 14px rgba(0, 255, 0, 0.35); 
     } 
 
 } 
@@ -228,7 +228,7 @@ header{
     50% { border-color: transparent; } 
     100% { border-color: rgba(0, 0, 0, 1); } */
     0% { border-color:rgb(49, 67, 18); 
-         box-shadow: white; 
+         box-shadow: rgba(0, 255, 0, 0.35); 
     } 
 
     50% { border-color: transparent; 
@@ -236,14 +236,19 @@ header{
     } 
 
     100% { border-color:rgb(49, 67, 18); 
-         box-shadow: white; 
+         box-shadow: rgba(0, 255, 0, 0.35); 
     }  
-}
 }
 
 
 /* .....................just check..................... */
-    
+
+
+
+/* .....................just check..................... */
+
+}
+
 
 
 @media screen and (min-width: 600px) and (max-width: 1024px) {
@@ -296,3 +301,4 @@ header{
     }
 
 }
+

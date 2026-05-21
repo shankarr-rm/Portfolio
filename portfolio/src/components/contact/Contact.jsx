@@ -34,7 +34,7 @@ const Contact = () => {
             <FaGithub className='contact__option-icon' />
             <h4>Github</h4>
             <h5>github.com/shankarr-rm</h5>
-            <a href="mailto:rmshankarrr@gmail.com">Send a message</a>
+            <a href="https://github.com/shankarr-rm" target="_blank" rel="noopener noreferrer"> Visit Profile </a>
           </article>
         </div>
 

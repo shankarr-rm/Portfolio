@@ -110,4 +110,81 @@
         margin-left: 5rem;
         margin-top: 0.5rem;
     }
+
+
+.service{
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    will-change: transform;
+}
+
+/* First card: right ↔ left */
+.service:nth-child(1){
+    animation-name: moveRightToLeft;
+}
+
+/* Second card: left ↔ right */
+.service:nth-child(2){
+    animation-name: moveLeftToRight;
+}
+
+    @keyframes moveRightToLeft {
+    0% {
+        transform: translateX(20px);
+    }
+    50% {
+        transform: translateX(-20px);
+    }
+    100% {
+        transform: translateX(20px);
+    }
+}
+
+@keyframes moveLeftToRight {
+    0% {
+        transform: translateX(-20px);
+    }
+    50% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(-20px);
+    }
+}
+
+@keyframes borderBlink {
+    0% {
+        border-color: transparent;
+        box-shadow: none;
+    }
+    50% {
+        border-color: rgba(255, 255, 0, 0.155);
+        box-shadow: 0 0 10px rgba(255, 255, 0, 0.2);
+    }
+    100% {
+        border-color: transparent;
+        box-shadow: none;
+    }
+}
+
+
+.service{
+    animation-duration: 4s, 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    will-change: transform, border-color;
+}
+
+/* First card: right ↔ left + border blink */
+.service:nth-child(1){
+    animation-name: moveRightToLeft, borderBlink;
+}
+
+/* Second card: left ↔ right + border blink */
+.service:nth-child(2){
+    animation-name: moveLeftToRight, borderBlink;
+}
+
+
 }

@@ -32,7 +32,7 @@ const About = () => {
             </div>
             
             <p> 
-            Motivated and ambitious Computing Undergraduate having a  strong communication, leadership and problem-solving with a
+            Motivated and ambitious Computing graduate having a  strong communication, leadership and problem-solving with a
             strong desire to continuously acquire knowledge with new  technologies. I am seeking an internship opportunity to further
             enhance my academic knowledge, practical skills and to collaborate with industry experts to develop innovative
             projects and to continue my growth in this field
